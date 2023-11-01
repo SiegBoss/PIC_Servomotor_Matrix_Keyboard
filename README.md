@@ -20,10 +20,7 @@ Este proyecto utiliza un microcontrolador PIC16F877A para controlar los grados d
 ## Diagrama de Conexión
 - Se incluye una imagen PNG que muestra el diagrama de conexión entre los componentes
 - Tambien se añade la simulacion realizada en Proteus
-
-## Funcionamiento
-Tenemos el Teclado Matricial en el cual podemos poner cualquier valor entre 0 a 180 y el Servomotor tomara esos grados 
-
+  
 -------------------------------
 
 # Control of a Servomotor with PIC16F877A and Matrix Keyboard
@@ -48,9 +45,6 @@ This project uses a PIC16F877A microcontroller to control the degrees of a servo
 ## Connection diagram
 - A PNG image is included showing the connection diagram between the components
 - The simulation carried out in Proteus was also added
-
-## Functioning
-We have the Matrix Keyboard in which we can put any value between 0 to 180 and the Servomotor will take those degrees
 
 -------------------------------
 
