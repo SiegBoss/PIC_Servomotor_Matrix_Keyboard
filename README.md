@@ -28,7 +28,7 @@ Este proyecto utiliza un microcontrolador PIC16F877A para controlar los grados d
 This project uses a PIC16F877A microcontroller to control the degrees of a servomotor using a matrix keyboard. Servomotor degrees are displayed on an LCD screen
 
 ## Components
-- Microcontroller: PIC PIC16F877A
+- Microcontroller: PIC16F877A
 - Servomotor
 - Matrix Keyboard
 - LCD Screen
