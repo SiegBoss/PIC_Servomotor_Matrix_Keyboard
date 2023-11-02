@@ -3,7 +3,7 @@
 Este proyecto utiliza un microcontrolador PIC16F877A para controlar los grados de un Servomotor utilizando un teclado matricial. Los grados del servomotor se muestran en una pantalla LCD
 
 ## Componentes
-- Microcontrolador: PIC PIC16F877A
+- Microcontrolador: PIC16F877A
 - Servomotor
 - Teclado Matricial
 - Pantalla LCD
