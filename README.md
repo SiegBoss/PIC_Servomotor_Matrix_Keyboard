@@ -13,7 +13,7 @@ Este proyecto utiliza un microcontrolador PIC16F877A para controlar los grados d
 - Lenguaje de programación: C
 
 ## Archivos del Proyecto
-- Código fuente: "servomotor_teclado_matricial.c"
+- Código fuente: "Servomotor_Matrix_Keyboard.c"
 - Archivo .hex para la programación del microcontrolador
 - Archivo .cof para depuración
 
@@ -38,7 +38,7 @@ This project uses a PIC16F877A microcontroller to control the degrees of a servo
 - Programming language: C
 
 ## Project files
-- Source code: "servomotor_matrical_keyboard.c"
+- Source code: "Servomotor_Matrix_Keyboard.c"
 - .hex file for microcontroller programming
 - .cof file for debugging
 
@@ -49,5 +49,5 @@ This project uses a PIC16F877A microcontroller to control the degrees of a servo
 -------------------------------
 
 <p align="center" >
-<img width="800px" height="500px" style="margin: 10px" src="./Diagrama servomotor_teclado_matricial.png"> 
+<img width="800px" height="500px" style="margin: 10px" src="./Diagram_Servomotor_Matrix_Keyboard.png"> 
 </p>
