@@ -1,4 +1,4 @@
-# Control de un Servomotor con PIC16F877A y Teclado Matricial
+# `PIC16F877A` Control de un Servomotor con Teclado Matricial
 
 Este proyecto utiliza un microcontrolador PIC16F877A para controlar los grados de un Servomotor utilizando un teclado matricial. Los grados del servomotor se muestran en una pantalla LCD
 
@@ -13,17 +13,20 @@ Este proyecto utiliza un microcontrolador PIC16F877A para controlar los grados d
 - Lenguaje de programación: C
 
 ## Archivos del Proyecto
-- Código fuente: "Servomotor_Matrix_Keyboard.c"
+- `Código fuente` : "Servomotor_Matrix_Keyboard.c"
 - Archivo .hex para la programación del microcontrolador
 - Archivo .cof para depuración
 
 ## Diagrama de Conexión
 - Se incluye una imagen PNG que muestra el diagrama de conexión entre los componentes
 - Tambien se añade la simulacion realizada en Proteus
-  
+
+## Licencia
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para obtener más detalles.
+
 -------------------------------
 
-# Control of a Servomotor with PIC16F877A and Matrix Keyboard
+# `PIC16F877A` Control of a Servomotor with Matrix Keyboard
 
 This project uses a PIC16F877A microcontroller to control the degrees of a servomotor using a matrix keyboard. Servomotor degrees are displayed on an LCD screen
 
@@ -38,13 +41,16 @@ This project uses a PIC16F877A microcontroller to control the degrees of a servo
 - Programming language: C
 
 ## Project files
-- Source code: "Servomotor_Matrix_Keyboard.c"
+- `Source code` : "Servomotor_Matrix_Keyboard.c"
 - .hex file for microcontroller programming
 - .cof file for debugging
 
 ## Connection diagram
 - A PNG image is included showing the connection diagram between the components
 - The simulation carried out in Proteus was also added
+
+## License
+This project is under the MIT license. See the `LICENSE` file for more details.
 
 -------------------------------
 
