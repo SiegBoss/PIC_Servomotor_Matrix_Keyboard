@@ -1,4 +1,4 @@
-// Contralando la posicion de un servomotor con un teclado matricial | Control the position of a servomotor with a matrix keyboard
+// Control de los grados de un servomotor con un teclado matricial | Control of the degrees of a servomotor with a matrix keyboard
 
 // Librerias | Libraries
 #include <16f877A.h>
@@ -6,13 +6,14 @@
 #use delay(clock = 4000000)
 #include <lcd.c>
 #use standard_io(B)
+#use fast_io(C)
 #use fast_io(D)
 
 // Declaracion de variables | Declaration of variables
 char key;
 char number[3];
 int i, change;
-float ang1, ang2, ang3, ang4, ang5, ang6;
+float angle1, angle2, angle3, angle4, angle5;
 
 //-----------------------------------
 // Teclado matricial | Matrix keyboard
@@ -129,7 +130,7 @@ void ccp1_int()
 void main()
 {
     // Configuracion de los pines de entrada y salida | Configuration of input and output pins
-    set_tris_B(0b00000000);
+    set_tris_C(0b00000000);
     set_tris_D(0b00001000);
     // Configuracion del timer 1 | Configuration of timer 1
     setup_timer_1(T1_INTERNAL | T1_DIV_BY_1);
@@ -158,7 +159,7 @@ void main()
         {
             i = 0;
 
-            While(i <= 2)
+            while(i <= 2)
             {
                 // Lectura del teclado | Reading the keyboard
                 key = read_kb();
@@ -182,20 +183,19 @@ void main()
         }
 
         // Cadena de caracteres a numero | Character string to number
-        ang1 = number[0] - 48;
-        ang2 = number[1] - 48;
-        ang3 = number[2] - 48;
+        angle1 = number[0] - 48;
+        angle2 = number[1] - 48;
+        angle3 = number[2] - 48;
 
         // Calcular el angulo | Calculate the angle
-        ang4 = ang3 + ang2 * 10 + ang1 * 100;
-        ang5 = (((499) * (ang4)) + 85410) / 90;
-        ang6 = ang4;
+        angle4 = angle3 + angle2 * 10 + angle1 * 100;
+        angle5 = (((499) * (angle4)) + 85410) / 90;
 
         // Configuracion del CCP1 | Configuration of CCP1
-        CCP_1 = ang5;
+        CCP_1 = angle5;
 
         // Mensaje en el LCD | Message on the LCD
         lcd_gotoxy(1, 1);
-        printf(lcd_putc, "Ang. Serv.=%.0f  ", ang6);
+        printf(lcd_putc, "Ang. Serv.=%.0f  ", angle4);
     }
 }
